@@ -25,6 +25,7 @@ const sendEmail = async (recipients, link) => {
         refreshToken: REFRESH_TOKEN,
         accessToken: accessToken.token,
       },
+       debug: true, // Add this line
     });
 
     const mailOptions = {
